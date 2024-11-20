@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+</head>
+
+<body>
+
+    <header>
+
+        <ul style="list-style-type:circle ;">
+            <li>
+                <a href="accuiel.html">Mission militaire</a>
+            </li>
+            <li> <a href="inscription.html">inscription/Reclamation</a></li>
+            <li><a href="equipement.html">equipement militaire</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1> Formulaire D'inscription ou Reclamation</h1>
+        <form>
+
+            <table>
+                <tr>
+                    <td><label for="nom">Nom:</label></td>
+                    <td><input type="text" name="nom" id="nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="Prenom">Prenom:</label></td>
+                    <td><input type="text" name="Prenom" id="Prenom"></td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="grade">Grade:</label>
+                    </td>
+                    <td>
+                        <select name="grade" id="grade">
+                            <option>LT</option>
+                            <option>SER</option>
+                            <option>CAP</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+
+                
+            </table>
+
+            <label for="message">Message:</label><br>
+<textarea cols="20" row="5" ></textarea><br>
+        
+<label for="message">joindre un fichier:</label>
+<input type="file" id="imageUpload" name="imageUpload" accept="image/*" onchange="afficherApercuImage()"><br>
+<input type="submit" value="Envoyer">
+</form>
+
+
+    </main>
+</body>
+
+</html>
